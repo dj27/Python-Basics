@@ -1,2 +1,2 @@
 # Python-Basics
-This is a simple implementation of Insertion Sort in Python
+This is a simple implementation of basic programs in Python.
