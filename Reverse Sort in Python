@@ -1,0 +1,12 @@
+def insertionSort(L, reverse=False):
+    for j in range(1,len(L)):
+        valToInsert = L[j]
+        i=j-1
+        while i>=0 and L[i]<valToInsert:
+            L[i+1] = L[i]
+            i-=1
+        L[i+1] = valToInsert
+   
+L=[1,9,0,3,4]
+insertionSort(L)
+print (L)
