@@ -1,0 +1,14 @@
+#Insertion Sort
+def Insert(List):
+   for i in range(1,len(List)):
+       Front=List[i]
+       Back=i-1
+       while Back>=0 and List[Back]>Front:
+           List[Back+1]=List[Back]
+           Back-=1
+       List[Back+1]=Front
+List1=[9,7,2,6,3]
+print (List1)
+Insert(List1)
+print (List1)
+
