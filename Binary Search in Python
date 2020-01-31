@@ -1,0 +1,18 @@
+#Binary  Searching
+List=[10,20,30,40,50]
+def Binary_search():
+    Element_search=int(input("Enter"))
+    low=0
+    high=len(List)-1
+    while low<=high:
+      mid=int((high+low)/2)
+      if List[mid]==Element_search:
+               print ("ELEMENT FOUND AT",mid+1)
+               break
+      if List[mid]<Element_search:
+               low=mid+1
+      if List[mid]>Element_search:
+               high=mid-1
+    else:
+         print ("ELEMENT NOT FOUND")
+Binary_search()
